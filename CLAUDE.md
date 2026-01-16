@@ -23,10 +23,11 @@
 |----------|------|
 | `/reflect-skill:init` | プロジェクト初期化 |
 | `/reflect-skill:reflect` | セッションから学習を抽出（重複検出あり） |
+| `/reflect-skill:search` | タスクに関連する知識を検索（Task tool経由） |
 | `/reflect-skill:status` | 状態・使用状況・鮮度アラートを表示 |
 | `/reflect-skill:review` | 知識を定期レビュー・整理 |
 | `/reflect-skill:export` | 知識をエクスポート |
 | `/reflect-skill:import` | 知識をインポート |
-| `/reflect-skill:on` | リマインダーを有効化 |
-| `/reflect-skill:off` | リマインダーを無効化 |
+| `/reflect-skill:on` | 自動リフレクションを有効化 |
+| `/reflect-skill:off` | 自動リフレクションを無効化 |
 | `/reflect-skill:split` | 200行超えファイルを分割 |
