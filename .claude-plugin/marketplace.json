@@ -1,0 +1,24 @@
+{
+  "name": "reflect-skill",
+  "owner": {
+    "name": "chitsii"
+  },
+  "metadata": {
+    "description": "Self-improving skills system for Claude Code",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "reflect-skill",
+      "source": ".",
+      "description": "Self-improving skills system - Learn from sessions and persist knowledge across conversations",
+      "version": "1.0.0",
+      "author": {
+        "name": "chitsii"
+      },
+      "repository": "https://github.com/chitsii/reflect-skill",
+      "license": "MIT",
+      "keywords": ["learning", "memory", "self-improvement", "knowledge"]
+    }
+  ]
+}

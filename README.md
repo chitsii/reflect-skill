@@ -12,32 +12,43 @@ LLMはセッションごとに記憶がリセットされる。同じ修正を�
 
 ## インストール
 
-### GitHubからインストール
+> **要件**: Claude Code 1.0.33以降が必要です（`claude --version` で確認）
 
-```bash
-# settings.json に追加
-claude settings set plugins.reflect-skill.source "github:chitsii/reflect-skill"
-```
-
-または `~/.claude/settings.json` を直接編集:
-```json
-{
-  "plugins": {
-    "reflect-skill": {
-      "source": "github:chitsii/reflect-skill"
-    }
-  }
-}
-```
-
-### ローカルからインストール（開発用）
+### ローカルからインストール
 
 ```bash
 # リポジトリをクローン
 git clone https://github.com/chitsii/reflect-skill.git
 
-# settings.json に追加
-claude settings set plugins.reflect-skill.source "/path/to/reflect-skill"
+# セッション起動時にプラグインディレクトリを指定
+claude --plugin-dir /path/to/reflect-skill
+```
+
+### GitHubからインストール（公開後）
+
+リポジトリがGitHubに公開されている場合:
+
+```bash
+# 1. マーケットプレイスとして追加
+/plugin marketplace add chitsii/reflect-skill
+
+# 2. プラグインをインストール
+/plugin install reflect-skill@chitsii-reflect-skill
+```
+
+### プロジェクト設定での自動有効化（公開後）
+
+`.claude/settings.json` に追加すると、プロジェクトで自動的に有効化されます:
+
+```json
+{
+  "extraKnownMarketplaces": [
+    "chitsii/reflect-skill"
+  ],
+  "enabledPlugins": {
+    "reflect-skill@chitsii-reflect-skill": true
+  }
+}
 ```
 
 ### プロジェクトの初期化
