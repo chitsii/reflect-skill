@@ -1,0 +1,38 @@
+{
+  "name": "reflect-skill",
+  "version": "1.2.0",
+  "description": "Self-improving skills system for Claude Code - Learn from sessions and persist knowledge",
+  "author": "tishi",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/chitsii/reflect-skill.git"
+  },
+  "keywords": [
+    "claude-code",
+    "learning",
+    "memory",
+    "self-improvement",
+    "knowledge",
+    "skills"
+  ],
+  "bin": {
+    "reflect-add": "./scripts/add-knowledge.js",
+    "reflect-meta": "./scripts/update-meta.js"
+  },
+  "scripts": {
+    "add": "node scripts/add-knowledge.js",
+    "meta": "node scripts/update-meta.js",
+    "stats": "node scripts/update-meta.js --stats",
+    "config": "node scripts/update-meta.js --config"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "files": [
+    "scripts/",
+    "commands/",
+    "templates/",
+    ".claude-plugin/"
+  ]
+}

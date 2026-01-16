@@ -64,9 +64,12 @@ claude --plugin-dir /path/to/reflect-skill
 |----------|------|
 | `/reflect-skill:init` | プロジェクトに知識ファイルを初期化 |
 | `/reflect-skill:reflect` | セッションから学習を抽出 |
-| `/reflect-skill:status` | 状態を表示 |
-| `/reflect-skill:on` | 自動リフレクション有効化 |
-| `/reflect-skill:off` | 自動リフレクション無効化 |
+| `/reflect-skill:status` | 状態を表示（使用状況・鮮度アラート含む） |
+| `/reflect-skill:review` | 蓄積した知識を定期レビュー・整理 |
+| `/reflect-skill:export` | 知識をエクスポート（別プロジェクトへ移植） |
+| `/reflect-skill:import` | 知識をインポート（別プロジェクトから） |
+| `/reflect-skill:on` | リマインダー有効化 |
+| `/reflect-skill:off` | リマインダー無効化 |
 | `/reflect-skill:split` | 200行超えファイルを分割 |
 
 ## ファイル構造
@@ -96,10 +99,11 @@ target-project/
 
 - `.reflect/` は `.gitignore` に追加（個人用）
 - チームルールに昇格する場合は CLAUDE.md に追記
-- 詳細: [docs/TEAM_OPERATION.md](docs/TEAM_OPERATION.md)
+- 詳細: [docs/TEAM.md](docs/TEAM.md)
 
 ## ドキュメント
 
 - [docs/DESIGN.md](docs/DESIGN.md) - 詳細設計
 - [docs/USAGE.md](docs/USAGE.md) - 知識ファイルの使い方
-- [docs/TEAM_GUIDE.md](docs/TEAM_GUIDE.md) - チーム運用ガイド
+- [docs/TEAM.md](docs/TEAM.md) - チーム運用ガイド
+- [docs/HOOKS.md](docs/HOOKS.md) - Hook連携（オプション）

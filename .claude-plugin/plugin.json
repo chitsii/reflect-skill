@@ -1,7 +1,7 @@
 {
   "name": "reflect-skill",
   "description": "Self-improving skills system - Learn from sessions and persist knowledge across conversations",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "author": {
     "name": "tishi"
   },
