@@ -30,6 +30,7 @@ Task tool を以下の設定で起動:
 ```
 Task tool:
   subagent_type: "Explore"
+  model: "haiku"           # 高速・低コスト（推奨）
   description: "知識ベース検索"
   prompt: |
     .reflect/knowledge/ を検索し、タスクに関連する知識を抽出してください。
