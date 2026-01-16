@@ -1,10 +1,10 @@
 ---
-description: リフレクション・リマインダーを有効化
+description: 自動リフレクションを有効化
 ---
 
 # /reflect-skill:on
 
-`.reflect/config.json` の `reminder` を `true` に設定。
+`.reflect/config.json` の `autoReflect` を `true` に設定。
 
 ## 効果
 

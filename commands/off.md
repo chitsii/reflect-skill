@@ -1,10 +1,10 @@
 ---
-description: リフレクション・リマインダーを無効化
+description: 自動リフレクションを無効化
 ---
 
 # /reflect-skill:off
 
-`.reflect/config.json` の `reminder` を `false` に設定。
+`.reflect/config.json` の `autoReflect` を `false` に設定。
 
 リマインダーなしで手動 `/reflect-skill:reflect` のみ使用。
 

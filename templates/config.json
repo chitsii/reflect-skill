@@ -1,5 +1,5 @@
 {
-  "reminder": false,
+  "autoReflect": false,
   "lastReflect": null,
   "version": "1.2.0",
   "freshness": {
