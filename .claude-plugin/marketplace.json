@@ -10,7 +10,7 @@
   "plugins": [
     {
       "name": "reflect-skill",
-      "source": ".",
+      "source": "./",
       "description": "Self-improving skills system - Learn from sessions and persist knowledge across conversations",
       "version": "1.0.0",
       "author": {
